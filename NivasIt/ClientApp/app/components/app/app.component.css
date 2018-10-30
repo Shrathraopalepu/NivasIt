@@ -4,3 +4,24 @@
         padding-top: 50px;
     }
 }
+.info {
+    text-align: center;
+    background: #1c619c;
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight:700;
+}
+.title-name {
+    text-align: center;
+    color: #1c619c;
+    font-size: 40px;
+}
+.page-links{
+    font-weight:700;
+
+}
+.layout-bottom {
+    color: white;
+    background: #2b2b2b;
+}
