@@ -10,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 
+//import { SlideshowModule } from 'ng-simple-slideshow';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -28,7 +30,8 @@ import { CounterComponent } from './components/counter/counter.component';
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: '**', redirectTo: 'home' }
-        ])
+		]),
+		//SlideshowModule
     ]
 })
 export class AppModuleShared {
