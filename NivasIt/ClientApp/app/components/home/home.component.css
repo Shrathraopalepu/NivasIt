@@ -42,6 +42,33 @@
 	animation-name: fadeInUp;
 	-webkit-animation-name: fadeInUp;
 }
-.homeCourses img {
+/*.homeCourses img {
 	width: 100%;
+}*/
+.styleButtonSize {
+    width: 200px;
+}
+.paddingBottom {
+    padding-bottom:3px;
+}
+.styleButton:hover {
+    width:200px;
+    color:black;
+    background-color:white
+}
+.paddingOfLeftGrid{
+    padding-left:100px
+}
+.figureSize {
+    width: 300px;
+    height: 180px;
+    padding-right:2px;
+}
+.wrapperAroundCourses .Content {
+    width: 300px;
+    padding: 2px 2px;
+    border-top: 3px solid rgb(0, 176, 228);
+    //padding-bottom: 3px;
+    border: 1px solid #dfdfdf;
+    margin-bottom:10%;
 }
