@@ -9,6 +9,7 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CoursesComponent } from './components/courses/courses.component';
+import { AboutUsComponent } from './components/aboutus/aboutus.component';
 
 //import { SlideshowModule } from 'ng-simple-slideshow';
 
@@ -18,7 +19,8 @@ import { CoursesComponent } from './components/courses/courses.component';
         NavMenuComponent,
         CoursesComponent,
         FetchDataComponent,
-        HomeComponent
+        HomeComponent,
+        AboutUsComponent
     ],
     imports: [
         CommonModule,
@@ -29,6 +31,7 @@ import { CoursesComponent } from './components/courses/courses.component';
             { path: 'home', component: HomeComponent },
             { path: 'courses', component: CoursesComponent },
             { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'AboutUs', component: AboutUsComponent },
             { path: '**', redirectTo: 'home' }
 		]),
 		//SlideshowModule
