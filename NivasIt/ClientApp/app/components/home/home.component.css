@@ -42,9 +42,9 @@
 	animation-name: fadeInUp;
 	-webkit-animation-name: fadeInUp;
 }
-/*.homeCourses img {
+.homeCourses img {
 	width: 100%;
-}*/
+}
 .styleButtonSize {
     width: 200px;
 }
