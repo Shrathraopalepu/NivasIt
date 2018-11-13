@@ -10,6 +10,10 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { AboutUsComponent } from './components/aboutus/aboutus.component';
+import { FacultyRegisterComponent } from './components/facultyregister/facultyregister.component';
+import { StudentRegisterComponent } from './components/studentregister/studentregister.component';
+import { ProjectSupportComponent } from './components/projectsupport/projectsupport.component';
+import { ContactUsComponent } from './components/contactus/contactus.component';
 
 //import { SlideshowModule } from 'ng-simple-slideshow';
 
@@ -20,7 +24,11 @@ import { AboutUsComponent } from './components/aboutus/aboutus.component';
         CoursesComponent,
         FetchDataComponent,
         HomeComponent,
-        AboutUsComponent
+        AboutUsComponent,
+        FacultyRegisterComponent,
+        StudentRegisterComponent,
+        ProjectSupportComponent,
+        ContactUsComponent
     ],
     imports: [
         CommonModule,
@@ -32,6 +40,10 @@ import { AboutUsComponent } from './components/aboutus/aboutus.component';
             { path: 'courses', component: CoursesComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'AboutUs', component: AboutUsComponent },
+            { path: 'StudentRegister', component: StudentRegisterComponent },
+            { path: 'FacultyRegister', component: FacultyRegisterComponent },
+            { path: 'ProjectSupport', component: ProjectSupportComponent },
+            { path: 'ContactUs', component: ContactUsComponent },
             { path: '**', redirectTo: 'home' }
 		]),
 		//SlideshowModule

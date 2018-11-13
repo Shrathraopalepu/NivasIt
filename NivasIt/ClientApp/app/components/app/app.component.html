@@ -11,10 +11,18 @@
                 <div class="col-sm-8">
                     <a class="page-links" routerLink="/home">Home</a>
                     <a class="page-links" routerLink="/courses">Courses</a>
-                    <a class="page-links" href="/">Project Support</a>
-                    <a class="page-links" href="/">Register</a>
+                    <a class="page-links" routerLink="/ProjectSupport">ProjectSupport</a>
+                    <!--<a class="page-links" href="/">Register</a>-->
+                    <div class="dropdown">
+                        <a class="dropbtn">Register</a>
+                        <div class="dropdown-content">
+                            <a routerLink="/StudentRegister" >STUDENT REGISTRATION</a>
+                            <a routerLink="/FacultyRegister" >FACULTY REGISTRATION</a>
+                        </div>
+                    </div>
+
                     <a class="page-links" routerLink="/AboutUs">AboutUs</a>
-                    <a class="page-links" href="/">Contact Us</a>
+                    <a class="page-links" routerLink="/ContactUs">ContactUs</a>
                     <a class="page-links" href="/">Search</a>
                 </div>
 			</div>

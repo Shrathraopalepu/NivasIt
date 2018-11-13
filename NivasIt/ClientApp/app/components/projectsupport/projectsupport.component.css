@@ -1,0 +1,14 @@
+.color {
+    color: blue;
+    font-family: Arial;
+}
+.padding {
+   
+    text-align: justify;
+    font-family: Arial;
+    font-size: 110%;
+    padding-left: 1.4%;
+}
+.container {
+    margin-top: 3%;
+}
