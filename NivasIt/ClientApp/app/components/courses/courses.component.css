@@ -42,9 +42,9 @@
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
-/*.homeCourses img {
-	width: 100%;
-}*/
+.courses img{
+    width: 100%;
+}
 .styleButtonSize {
     width: 200px;
 }
@@ -70,10 +70,9 @@
 }
 
 .wrapperAroundCourses .Content {
-    width: 300px;
+    width: 20%;
     padding: 2px 2px;
     border-top: 3px solid rgb(0, 176, 228);
-    //padding-bottom: 3px;
     border: 1px solid #dfdfdf;
     margin-bottom: 10%;
 }
