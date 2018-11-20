@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ComponentFactoryResolver } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -14,6 +14,8 @@ import { FacultyRegisterComponent } from './components/facultyregister/facultyre
 import { StudentRegisterComponent } from './components/studentregister/studentregister.component';
 import { ProjectSupportComponent } from './components/projectsupport/projectsupport.component';
 import { ContactUsComponent } from './components/contactus/contactus.component';
+import { DetailsComponent } from './components/details/details.component';
+import { EmailServices } from './components/DetailsServices/email.services';
 
 //import { SlideshowModule } from 'ng-simple-slideshow';
 
@@ -28,7 +30,8 @@ import { ContactUsComponent } from './components/contactus/contactus.component';
         FacultyRegisterComponent,
         StudentRegisterComponent,
         ProjectSupportComponent,
-        ContactUsComponent
+        ContactUsComponent,
+        DetailsComponent
     ],
     imports: [
         CommonModule,
@@ -37,7 +40,10 @@ import { ContactUsComponent } from './components/contactus/contactus.component';
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
-            { path: 'courses', component: CoursesComponent },
+            {
+                path: 'courses', component: CoursesComponent
+            },
+            { path: 'courses/details', component: DetailsComponent},
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'AboutUs', component: AboutUsComponent },
             { path: 'StudentRegister', component: StudentRegisterComponent },
@@ -47,7 +53,8 @@ import { ContactUsComponent } from './components/contactus/contactus.component';
             { path: '**', redirectTo: 'home' }
 		]),
 		//SlideshowModule
-    ]
+    ],
+    providers: [ EmailServices]
 })
 export class AppModuleShared {
 }

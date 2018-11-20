@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using NivasIt.Models;
 
 namespace NivasIt.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/{{controller}}")]
     public class SampleDataController : Controller
     {
         private static string[] Summaries = new[]
@@ -39,6 +40,16 @@ namespace NivasIt.Controllers
                     return 32 + (int)(TemperatureC / 0.5556);
                 }
             }
+        }
+
+        [Route("EmailHelper")]
+        public class EmailHelper
+        {
+            public void SendMail(StudentRegister studentRegister)
+            {
+
+            }
+
         }
     }
 }
