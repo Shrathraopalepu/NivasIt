@@ -31,11 +31,33 @@
 .layout-bottom {
     color: white;
     background: #2b2b2b;
+    
+}
+.paddingLeft{
+    padding-left:5%;
+}
+.paddingofdiv{
+    margin-left:5%;
 }
 
 
+.paddingofleft{
+  
+}
 
+.li{
+    padding-bottom:3%;
+    
+}
 
+.li:hover{
+    color:cornflowerblue;
+}
+
+.h6 {
+    padding-bottom: 3%;
+    padding-left:5%;
+}
 
 .dropbtn {
     color: #1c619c;
