@@ -7,11 +7,11 @@ namespace NivasIt.Models
 {
     public class StudentRegister
     {
-        public string name { get; set; }
-        public string phone { get; set; }
-        public string email { get; set;}
-        public string message { get; set; }
-        public string location { get; set; }
+        public string Name { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set;}
+        public string Message { get; set; }
+        public string Location { get; set; }
 
     }
 }
