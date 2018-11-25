@@ -1,80 +1,42 @@
-<div class='container-fluid'>
-	<div>
-		<div class="top-header">
-			<div class="row info">
-				INDIA :+91 970 442 9989, +91 789 304 0005 | info@spiritsofts.com
-			</div>
-			<div class="row tile-header ">
-				<div class="col-sm-4 title-name">
-					NivasIt
-				</div>
-                <div class="col-sm-8">
-                    <a class="page-links" routerLink="/home">Home</a>
-                    <a class="page-links" routerLink="/courses">Courses</a>
-                    <a class="page-links" routerLink="/ProjectSupport">ProjectSupport</a>
-                    <!--<a class="page-links" href="/">Register</a>-->
-                    <div class="dropdown">
-                        <a class="dropbtn">Register</a>
-                        <div class="dropdown-content">
-                            <a routerLink="/StudentRegister" >STUDENT REGISTRATION</a>
-                            <a routerLink="/FacultyRegister" >FACULTY REGISTRATION</a>
-                        </div>
-                    </div>
 
-                    <a class="page-links" routerLink="/AboutUs">AboutUs</a>
-                    <a class="page-links" routerLink="/ContactUs">ContactUs</a>
-                    <a class="page-links" href="/">Search</a>
+	<div>
+        <div class="top-header">
+            <div class="row info">
+                INDIA :+91 970 442 9989, +91 789 304 0005 | info@spiritsofts.com
+            </div>
+         
+            <div class="navbar navbar-btn tile-header">
+                <div class="container">
+                    <div class="navbar-header ">
+                        <a class="navbar-brand title-name" href="#"> NivasIt</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li ><a class="page-links active" routerLink="/home"><i class="fa fa-rupee-sign"></i>Home</a></li>
+                        <li><a class="page-links" routerLink="/courses">Courses</a></li>
+                        <li>  <a class="page-links" routerLink="/ProjectSupport">ProjectSupport</a></li>
+                       
+                        <li class="dropdown ">
+                            <div class="paddingtop">
+                                <a class="dropbtn ">Register</a>
+                                <div class="dropdown-content">
+                                    <a routerLink="/StudentRegister">STUDENT REGISTRATION</a>
+                                    <a routerLink="/FacultyRegister">FACULTY REGISTRATION</a>
+                                </div>
+                            </div>
+                        </li>
+                       
+                        <li>  <a class="page-links" routerLink="/AboutUs">AboutUs</a></li>
+                        <li><a class="page-links" routerLink="/ContactUs">ContactUs</a></li>
+
+                    </ul>
                 </div>
-			</div>
-		</div>
+            </div>
+        </div>
 		<div class='body-content clearfix'>
 			<router-outlet></router-outlet>
 		</div>
         <div class="row layout-bottom">
-            <!--<div class="col-sm-2 col-xs-offset-1">
-        <h3>Quick Links</h3>
-        <ul>
-            <li>Home</li>
-            <li>Courses</li>
-            <li>Project Support</li>
-            <li>Register</li>
-            <li>Contact Us</li>
-            <li>Search</li>
-        </ul>
-    </div>
-    <div class="col-sm-2">
-        <h3>LATEST COURSES</h3>
-        <ul>
-            <li>Home</li>
-            <li>Courses</li>
-            <li>Project Support</li>
-            <li>Register</li>
-            <li>Contact Us</li>
-            <li>Search</li>
-        </ul>
-    </div>
-    <div class="col-sm-2">
-        <h3>COURSE CATEGORIES</h3>
-        <ul>
-            <li>Home</li>
-            <li>Courses</li>
-            <li>Project Support</li>
-            <li>Register</li>
-            <li>Contact Us</li>
-            <li>Search</li>
-        </ul>
-    </div>
-    <div class="col-sm-2">
-        <h3>CONTACT INFO</h3>
-        <ul>
-            <li>Home</li>
-            <li>Courses</li>
-            <li>Project Support</li>
-            <li>Register</li>
-            <li>Contact Us</li>
-            <li>Search</li>
-        </ul>
-    </div>-->
+         
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><h4 class="paddingLeft"> QuickLinks</h4> </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -143,3 +105,4 @@
             </div>
         </div>
 </div>
+ 

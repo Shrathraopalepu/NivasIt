@@ -9,7 +9,7 @@
 .info {
 	text-align: center;
 	background: #1c619c;
-	padding: 10px;
+	padding: 15px;
 	font-size: 14px;
 	color: white;
 	font-weight: 700;
@@ -60,24 +60,32 @@
 }
 
 .dropbtn {
-    color: #1c619c;
-    padding: 16px;
+    //color: #1c619c;
+    padding: 20px;
+    padding-top: 200%;
     font-size: 16px;
     border: none;
+    color: blue;
+    font-weight: 700;
 }
-
+.paddingtop{
+    padding-top:15%;
+    
+    
+}
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
 .dropdown-content {
+    padding-top:20%;
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 400%;
+    background-color: lightblue;
+    min-width: 210%;
     //box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    //z-index: 1;
+    z-index: 1;
 }
 
     .dropdown-content a {
