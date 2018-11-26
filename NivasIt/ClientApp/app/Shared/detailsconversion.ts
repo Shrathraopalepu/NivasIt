@@ -1,8 +1,8 @@
 
 export class IDetailsConversion  {
     
-    public coursename: string;
-    public courseparagraphone: string;
-    public courseparagraphtwo: string;
+    public CourseName: string;
+	public CourseParaGraphOne: string;
+	public CourseParaGraphTwo: string;
 
 }

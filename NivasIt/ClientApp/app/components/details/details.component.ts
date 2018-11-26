@@ -18,7 +18,7 @@ export class DetailsComponent implements OnInit {
     private _url = '/Data/DataOfCourses.json';
     private details: IDetailsConversion;
   
-    public id: string;
+    public courseNmme: string;
 
     constructor(private detailsService: DetailsServices, private http: Http) {
 
@@ -36,7 +36,7 @@ export class DetailsComponent implements OnInit {
     }
 
     public Details(): Observable<IDetailsConversion> {//
-        this.id = this.detailsService.getValue;
+		this.courseNmme = this.detailsService.getValue;
        // return this.http.get(this._url).map((resp:Response) =>resp.json());
         return this.http.get(this._url).map(response => {
             let data = response.json();
@@ -44,7 +44,7 @@ export class DetailsComponent implements OnInit {
             return detailsConversion;
         }).concatMap(array => Observable.from(array)).filter(fil => {
             debugger;
-            return this.id.includes(fil.coursename);
+			return this.courseNmme==fil.CourseName;
             });
 
     }
