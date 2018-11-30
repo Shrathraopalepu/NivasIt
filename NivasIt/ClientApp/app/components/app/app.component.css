@@ -9,8 +9,9 @@
 .info {
 	text-align: center;
 	background: #1c619c;
-	padding: 15px;
-	font-size: 14px;
+    padding-top:1%;
+    padding-bottom:1%;
+	font-size: 120%;
 	color: white;
 	font-weight: 700;
 }
@@ -34,7 +35,8 @@
     
 }
 .paddingLeft{
-    padding-left:5%;
+    //padding-left:5%;
+    font-weight:900;
 }
 .paddingofdiv{
     margin-left:5%;
@@ -47,16 +49,20 @@
 
 .li{
     padding-bottom:3%;
+    font-weight:700;
     
 }
 
-.li:hover{
-    color:cornflowerblue;
-}
+    .li:hover {
+        color: cornflowerblue;
+        font-weight: 700;
+    }
 
 .h6 {
     padding-bottom: 3%;
     padding-left:5%;
+    font-weight:700;
+    font-size:100%;
 }
 
 .dropbtn {
@@ -103,3 +109,23 @@
     display: block;
 }
 
+.paddingtopnav{
+    margin-top:unset;
+}
+
+.paddingofh6{
+    padding-right:3%;
+    color:blue;
+}
+.lilist{
+    color:blue;
+    padding-right:2%;
+    
+}
+
+.paddingLeftofcontactinfo{
+    padding-left:5%;
+}
+.paddingofheader{
+    padding-left:0.5%;
+}

@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "font-awesome-animation@0.2.1",
+      "destination": "node_modules/font-awesome-animation/"
+    }
+  ]
+}

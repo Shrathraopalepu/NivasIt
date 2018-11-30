@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'home',
@@ -6,4 +7,9 @@ import { Component } from '@angular/core';
 	styleUrls:['./home.component.css']
 })
 export class HomeComponent {
+    constructor(private router: Router) {
+
+    }
+    public knowmore() {
+        this.router.navigate(['/courses']); }
 }
