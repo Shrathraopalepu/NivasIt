@@ -5,28 +5,52 @@
 </div>
 <div class="row marginbottom">
 
-	<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 color">
-		<div>{{details?.CourseParaGraphOne}}</div>
-		<div>{{details?.CourseParaGraphTwo}}</div>
-	</div>
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 color">
+        <div>{{details?.CourseParaGraphOne}}</div>
+        <div>{{details?.CourseParaGraphTwo}}</div>
+        <!--<div>{{details?.ImageUrl}}</div>-->
+        <div>
+            <!--<img src=[imageUrl] >-->
+            {{details?.CourseParaGraphThree}}
+        </div>
+        <button (click)='onclickss()'>hell</button>
+
+        <ul *ngFor="let key of keyword ">
+            {{key}}
+        </ul>
+    </div>
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 widthofbox">
-        <form class="padding">
+        <form class="padding" #detailsForm="ngForm" (ngSubmit)="onSubmit(detailsForm.value)" >
             <div class="form-group width">
-                <input class="form-control" type="text" name="name" placeholder="Your Name" />
+                <input class="form-control" type="text" name="name" placeholder="Your Name" [(ngModel)]="name" #nameRef="ngModel" required />
+                <div [hidden]="nameRef.valid || nameRef.pristine "
+                     class="alert alert-danger">
+                    Name is required
+                </div>
             </div>
             <div class="form-group width">
                 <input class="form-control" type="text" name="email" placeholder="Your Email" />
             </div>
             <div class="form-group width">
-                <input class="form-control" type="text" name="phonenumber" placeholder="Your PhoneNumber" />
+                <input type="text" name="email" [(ngModel)]="email" #emailRef="ngModel" class="form-control" placeholder="Your PhoneNumber" required />
+                <div [hidden]="emailRef.valid || emailRef.pristine"
+                     class="alert alert-danger">
+                    Email is Required
+                </div>
             </div>
             <div class="form-group width">
-                <input class="form-control" type="text" name="location" placeholder="Location" />
+                <input type="text" name="Location" [(ngModel)]="Location" #locationRef="ngModel"  class="form-control" required placeholder="Location" /> 
+                <div [hidden]="locationRef.valid ||locationRef.pristine"
+                     class="alert alert-danger widths">
+                    Location is Required
+                </div>
+                
             </div>
             <div class="form-group width">
-                <textarea class="form-control"  name="name" placeholder="Course/Your Message" rows="3" ></textarea>
+                <textarea class="form-control" name="message" [(ngModel)]="message" #messageRef="ngModel" placeholder="Course/Your Message" rows="3" ></textarea>
+               
             </div>
-            <button class="btn btn-primary btn-sm">
+            <button [disabled]="!detailsForm.form.valid" type="submit" class="btn btn-primary btn-sm">
                 Send
             </button>
         </form>

@@ -6,13 +6,13 @@ import { Http, Headers } from '@angular/http';
 //	})
 //};
 @Injectable()
-export class EmailServices{
+export class StudentRegister{
     constructor(private http:Http) {
 	}
 	private url = 'http://localhost:60149/api/';
-    public Sendmail(object: any) {
+    public StoreStudent(object: any) {
         debugger;
-		this.http.post(this.url + "Email", object).map(x => x.json()).subscribe(x => {
+        this.http.post(this.url + "StudentRegister", object).map(x => x.json()).subscribe(x => {
 			debugger
 			var sha = x;
 		});

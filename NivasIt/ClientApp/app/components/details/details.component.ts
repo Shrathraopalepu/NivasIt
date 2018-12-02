@@ -9,6 +9,7 @@ import 'rxjs/add/operator/filter';
 import 'rxjs/add/observable/from';
 import { DetailsServices } from '../DetailsServices/details.services';
 
+
 @Component({
     selector: 'coursedetails',
     templateUrl: './details.component.html',
@@ -16,9 +17,13 @@ import { DetailsServices } from '../DetailsServices/details.services';
 })
 export class DetailsComponent implements OnInit {
     private _url = '/Data/DataOfCourses.json';
+
+
+
     private details: IDetailsConversion;
-  
+    private keyword = []; 
     public courseNmme: string;
+    public imageUrl: string;
 
     constructor(private detailsService: DetailsServices, private http: Http) {
 
@@ -26,13 +31,18 @@ export class DetailsComponent implements OnInit {
     
     ngOnInit() {
 
-      //  this.Details=this.details.getDetails();
-        
+        //  this.Details=this.details.getDetails();
+        debugger;
       this.Details().subscribe(data =>
             this.details = data,
             error => console.log(error));
+
+
+    
        
-        console.log(this.details)
+        console.log(this.details);
+       // this.imageUrl = this.details.ImageUrl;
+       // console.log(this.details.ImageUrl);
     }
 
     public Details(): Observable<IDetailsConversion> {//
@@ -49,4 +59,14 @@ export class DetailsComponent implements OnInit {
 
     }
 
+    public onclickss() {
+        //on clcik the this details from the json file i.e, should be displayed
+        debugger;
+        this.courseNmme = this.detailsService.getValue;
+
+        this.keyword = this.details.KeyFeatures;
+
+    }
+
+   
 }

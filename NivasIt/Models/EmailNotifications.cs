@@ -5,13 +5,12 @@ using System.Threading.Tasks;
 
 namespace NivasIt.Models
 {
-    public class StudentRegister
+    public class EmailNotifications
     {
-        public  string Name { get; set; }
+        public string Name { get; set; }
         public string Phone { get; set; }
-        public string Email { get; set;}
+        public string Email { get; set; }
         public string Message { get; set; }
         public string Location { get; set; }
-
     }
 }

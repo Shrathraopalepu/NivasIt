@@ -28,32 +28,52 @@
 
     </div>
 <div class="row colorofBottom">
-    <form>
+    <form #contactus="ngForm" (ngSubmit)="onSubmit(contactus.value)">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
 
             <div class="form-group margintop ">
-                <input type="text" name="name" placeholder="Name" class="form-control' width" /><i class="fa fa-user controls "></i>
+                <input type="text" name="Name" [(ngModel)]="Name" #nameRef="ngModel" placeholder="Name" class="form-control' width" required /><i class="fa fa-user controls "></i>
+                <div [hidden]="nameRef.valid || nameRef.pristine "
+                     class="alert alert-danger widths">
+                    Name is required
+                </div>
             </div>
 
             <div class="form-group ">
-                <input type="text" name="Email" placeholder="Email" class="form-control' width" /> <i class="fa fa-envelope controls  "></i>
+                <input type="text" name="Email" [(ngModel)]="Email" #emailRef="ngModel" placeholder="Email" class="form-control' width" required /> <i class="fa fa-envelope controls  "></i>
+                <div [hidden]="emailRef.valid || emailRef.pristine"
+                     class="alert alert-danger widths">
+                    Email is Required
+                </div>
             </div>
 
             <div class="form-group ">
-                <input type="text" name="phone" placeholder="Phone" class="form-control' width" /> <i class="fa fa-phone controls "></i>
+                <input type="text" name="phone" pattern="^[0-9]{10}$" [(ngModel)]="phone" #phoneRef="ngModel" placeholder="Phone" class="form-control' width" required /> <i class="fa fa-phone controls "></i>
+                <div *ngIf="phoneRef.errors && (phoneRef.dirty || phoneRef.touched)" class="alert alert-danger widths">
+                    <div [hidden]="!phoneRef.errors.required">
+                        Phone number is required
+                    </div>
+                    <div [hidden]="! phoneRef.errors.pattern">
+                        Please enter 10 digit phone number
+                    </div>
+                </div>
             </div>
 
             <div class="form-group marginbottom">
-                <input type="text" name="Location" placeholder="Location" class="form-control' width" /> <i class="fa fa-map-marker controls "></i>
+                <input type="text" name="Location" [(ngModel)]="Location" #locationRef="ngModel" placeholder="Location" class="form-control' width" required /> <i class="fa fa-map-marker controls "></i>
+                <div [hidden]="locationRef.valid ||locationRef.pristine"
+                     class="alert alert-danger widths">
+                    Location is Required
+                </div>
             </div>
         </div>
         <div class="col-lg-6 co-md-6 col-sm-12 col-xs-12 ">
             <div class="form-group margintop ">
-                <textarea name="name" placeholder="Message" class="form-control' widthofText" rows="8"></textarea>
+                <textarea name="message" [(ngModel)]="message"   placeholder="Message" class="form-control' widthofText" rows="8" ></textarea>
             </div>
 
             <div class="form-group marginbottom">
-                <button type="button" class="btn btn-group-lg btn-primary widthofText">Send</button>
+                <button [disabled]="!contactus.form.valid" type="submit" class="btn btn-group-lg btn-primary widthofText">Send</button>
             </div>
         </div>
     </form>

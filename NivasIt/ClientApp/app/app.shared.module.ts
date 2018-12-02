@@ -17,6 +17,7 @@ import { ContactUsComponent } from './components/contactus/contactus.component';
 import { DetailsComponent } from './components/details/details.component';
 import { EmailServices } from './components/DetailsServices/email.services';
 import { DetailsServices } from './components/DetailsServices/details.services';
+import { StudentRegister } from './components/DetailsServices/studentregister.services';
 
 //import { SlideshowModule } from 'ng-simple-slideshow';
 
@@ -55,7 +56,7 @@ import { DetailsServices } from './components/DetailsServices/details.services';
 		]),
 		//SlideshowModule
     ],
-    providers: [EmailServices, DetailsServices]
+    providers: [EmailServices, DetailsServices, StudentRegister]
 })
 export class AppModuleShared {
 }
