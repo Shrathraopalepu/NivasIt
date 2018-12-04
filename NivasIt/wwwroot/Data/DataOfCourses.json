@@ -3,16 +3,16 @@
     "CourseName": "BigData&Hadoop",
     "CourseParaGraphOne": "Our Institute offers Online Hadoop Training with Hadoop certification training material, Learn Big Data Hadoop course by experts. Live Tutorial Videos,  Apache Hadoop Job Support. Attend Demo for free & you will find Spiritsofts is the best Institute within reasonable fee.",
     "CourseParaGraphTwo": "NivasIt is the best Training Institutes to expand your skills and knowledge. We Provides the best learning Environment. Obtain all the training by our expert professionals which is having working experience from Top IT companies.The Training in is every thing we explained based on real time scenarios, it works which we do in companies.",
+    "ImageUrl": "/Pictures/BigData&Hadoop.Png",
+    "CourseParaGraphThree": "hello",
+    "KeyFeatures": [ "40 hours of Instructor Training Classes", "24/7 Support", "Lifetime Access to Recorded Sessions", "Practical Approach", "Real World use cases and Scenarios", "Expert & Certified Trainers" ]
 
-      "CourseParaGraphThree": "hello",
-      "KeyFeatures": [ "40 hours of Instructor Training Classes", "24/7 Support", "Lifetime Access to Recorded Sessions", "Practical Approach", "Real World use cases and Scenarios", "Expert & Certified Trainers" ]
-    
   },
     {
       "CourseName": "Hadoop",
       "CourseParaGraphOne": "Heloo 1",
       "CourseParaGraphTwo": "Hello 2",
-      //"ImageUrl": "",
+      "ImageUrl": "/Pictures/BigData&Hadoop.Png",
       "CourseParaGraphThree": "hello",
       "KeyFeatures": [ "40 hours of Instructor Training Classes", "24/7 Support", "Lifetime Access to Recorded Sessions", "Practical Approach", "Real World use cases and Scenarios", "Expert & Certified Trainers" ]
 
