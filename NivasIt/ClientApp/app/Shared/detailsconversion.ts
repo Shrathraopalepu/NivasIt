@@ -6,6 +6,6 @@ export class IDetailsConversion  {
     public CourseParaGraphTwo: string;
    // public ImageUrl: string;
     public CourseParaGraphThree: string;
-    public KeyFeatures = [];
+    public KeyFeatures: any[];
 
 }

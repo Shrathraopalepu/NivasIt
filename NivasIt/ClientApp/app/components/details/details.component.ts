@@ -21,7 +21,7 @@ export class DetailsComponent implements OnInit {
 
 
     private details: IDetailsConversion;
-    private keyword = []; 
+    private keyword :string[]; 
     public courseNmme: string;
     public imageUrl: string;
 
@@ -49,6 +49,7 @@ export class DetailsComponent implements OnInit {
 		this.courseNmme = this.detailsService.getValue;
        // return this.http.get(this._url).map((resp:Response) =>resp.json());
         return this.http.get(this._url).map(response => {
+            debugger;
             let data = response.json();
             let detailsConversion = data as IDetailsConversion[];
             return detailsConversion;
