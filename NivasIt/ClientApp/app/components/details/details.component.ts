@@ -8,6 +8,8 @@ import 'rxjs/add/operator/concatMap';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/observable/from';
 import { DetailsServices } from '../DetailsServices/details.services';
+import { DomSanitizer } from '@angular/platform-browser'
+import { EmailServices } from '../DetailsServices/email.services';
 
 
 @Component({
@@ -24,8 +26,10 @@ export class DetailsComponent implements OnInit {
     private keyword :string[]; 
     public courseNmme: string;
     public imageUrl: string;
+    public faq: string[];
+    public courseContent: string[];
 
-    constructor(private detailsService: DetailsServices, private http: Http) {
+    constructor(private detailsService: DetailsServices, private http: Http, private domSanitizer: DomSanitizer, private emailservice: EmailServices) {
 
     }
     
@@ -41,7 +45,8 @@ export class DetailsComponent implements OnInit {
     
        
         console.log(this.details);
-       // this.imageUrl = this.details.ImageUrl;
+       
+      // this.imageUrl = '../../../../wwwroot\\Pictures\\BigData&Hadoop.png';
        // console.log(this.details.ImageUrl);
     }
 
@@ -57,17 +62,33 @@ export class DetailsComponent implements OnInit {
             debugger;
 			return this.courseNmme==fil.CourseName;
             });
+     
 
+    }
+    public onSubmit(values: any) {
+        debugger
+        console.log(values);
+        this.emailservice.Sendmail(values);
     }
 
     public onclickss() {
         //on clcik the this details from the json file i.e, should be displayed
         debugger;
         this.courseNmme = this.detailsService.getValue;
-
+       
         this.keyword = this.details.KeyFeatures;
 
     }
 
-   
+    public FAQ() {
+        debugger
+        this.faq = this.details.FAQ;
+    }
+
+    public CourseContent() {
+        this.courseContent = this.details.CourseContent;
+    }
+    photoURL() {
+        return this.domSanitizer.bypassSecurityTrustUrl(this.details.ImageUrl);
+    }
 }

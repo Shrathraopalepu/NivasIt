@@ -37,8 +37,8 @@ namespace NivasIt.Controllers
             //if (!ModelState.IsValid)
             //    return BadRequest("Please enter the all valid details");
             var message = new MimeMessage();
-            message.From.Add(new MailboxAddress("sai charan", "nanirohith07@gmail.com"));
-            message.To.Add(new MailboxAddress("sai charan", emailNotificationDetails.Email));
+            message.From.Add(new MailboxAddress("sai charan", "namadasaicharan@gmail.com"));
+            message.To.Add(new MailboxAddress(emailNotificationDetails.Name, emailNotificationDetails.Email));
             message.Subject="Testmail";
             message.Body = new TextPart("html") { Text = "Name: " + emailNotificationDetails.Name +"<br>" +
                 "email: " + emailNotificationDetails.Email + "<br>" +
@@ -50,7 +50,7 @@ namespace NivasIt.Controllers
             using (var client =new SmtpClient())
             {
                 client.Connect("smtp.gmail.com", 587,false);
-                //credentials exception vastunde..maa friend kuda iche chusa...
+               
                 client.Authenticate("namadasaicharan@gmail.com","Mymomdad@1996"); 
                 client.Send(message);
                 client.Disconnect(true);

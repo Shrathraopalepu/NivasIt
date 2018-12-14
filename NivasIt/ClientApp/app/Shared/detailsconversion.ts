@@ -5,7 +5,7 @@ export class IDetailsConversion  {
 	public CourseParaGraphOne: string;
     public CourseParaGraphTwo: string;
     public ImageUrl: string;
-    public CourseParaGraphThree: string;
-    public KeyFeatures: any[];
-
+    public KeyFeatures: any;
+    public CourseContent: any;
+    public FAQ: any;
 }

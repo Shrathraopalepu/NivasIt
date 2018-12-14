@@ -39,7 +39,10 @@
     height: 40px;
 }
 .widthofText {
-    width: 80%;
+    width: 45%;
+    
+    margin-left: 30%;
+ 
 }
 .p {
     width: auto;
@@ -97,4 +100,10 @@
     text-align: center;
     border: 1px solid #1C619C;
     border-left: none;
+}
+
+.alert-danger {
+    color: red;
+    background-color: unset;
+    border: unset;
 }

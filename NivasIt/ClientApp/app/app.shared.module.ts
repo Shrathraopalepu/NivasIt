@@ -19,6 +19,7 @@ import { EmailServices } from './components/DetailsServices/email.services';
 import { DetailsServices } from './components/DetailsServices/details.services';
 import { StudentRegister } from './components/DetailsServices/studentregister.services';
 
+
 //import { SlideshowModule } from 'ng-simple-slideshow';
 
 @NgModule({

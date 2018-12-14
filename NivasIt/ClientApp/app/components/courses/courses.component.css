@@ -67,6 +67,7 @@
     width: 300px;
     height: 180px;
     padding-right: 2px;
+    cursor:pointer;
 }
 
 .wrapperAroundCourses .Content {
@@ -154,6 +155,7 @@
     //padding-bottom: 3px;
     border: 1px solid #dfdfdf;
     margin-bottom: 8%;
+    cursor:pointer;
 }
 .fontweightofhome {
     font-weight: 700;
