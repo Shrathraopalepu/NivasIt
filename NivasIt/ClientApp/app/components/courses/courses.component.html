@@ -1,141 +1,142 @@
 ﻿<!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingOfLeftGrid">
-        <h2 class="animated animatedFadeInUp fadeInUp">Courses Offered</h2>
-    </div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingOfLeftGrid">
+    <h2 class="animated animatedFadeInUp fadeInUp">Courses Offered</h2>
+</div>
 
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 paddingOfLeftGrid">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 paddingOfLeftGrid">
 
-        <button class="btn btn-primary btn-lg styleButtonSize styleButton">Orcale Hyperion</button><br><br>
-        <button class="btn btn-primary btn-lg styleButtonSize styleButton"> New Modules</button><br><br>
-        <button class="btn btn-primary btn-lg styleButtonSize styleButton">ORACLE Apps</button><br><br>
-        <button class="btn btn-primary btn-lg styleButtonSize styleButton">IBM</button><br><br>
-        <button class="btn btn-primary btn-lg styleButtonSize styleButton">Other Courses</button><br><br><br>
-    </div>
-    <div class="courses text-center clearfix col-lg-8 col-md-8 col-sm-8 col-xs-12 ">
+    <button class="btn btn-primary btn-lg styleButtonSize styleButton">Orcale Hyperion</button><br><br>
+    <button class="btn btn-primary btn-lg styleButtonSize styleButton"> New Modules</button><br><br>
+    <button class="btn btn-primary btn-lg styleButtonSize styleButton">ORACLE Apps</button><br><br>
+    <button class="btn btn-primary btn-lg styleButtonSize styleButton">IBM</button><br><br>
+    <button class="btn btn-primary btn-lg styleButtonSize styleButton">Other Courses</button><br><br><br>
+</div>
+<div class="courses text-center clearfix col-lg-8 col-md-8 col-sm-8 col-xs-12 ">
 
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <figure>
-				<div class="wrapperAroundCourses ">
-					<div>
-						<a (click)='navigateintopage("BigData&Hadoop")' ><img src="../../../../wwwroot\Pictures\BigData&Hadoop.png" alt="" class="figureSize"></a>
-					</div>
-					<figcaption class="item-description Content">
-						<a (click)='navigateintopage("BigData&Hadoop")'>
-							<h4 class="item-title fontweightofhome">Big Data &amp; Hadoop</h4>
-							<p class="fontweightofhome">Training</p>
-						</a>
-					</figcaption>
-				</div>
-            </figure>
-
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <figure>
-                <div class="wrapperAroundCourses ">
-                    <div>
-                        <a (click)='navigateintopage("RoboticProcessAutomation")' ><img src="../../../../wwwroot\Pictures\RoboticProcessAutomation.png" alt="" class="figureSize"></a>
-                    </div>
-                    <figcaption class="item-description Content">
-                        <a (click)='navigateintopage("RoboticProcessAutomation")' >
-                            <h4 class="item-title fontweightofhome">RPA COURSES</h4>
-                            <p class="fontweightofhome">Training</p>
-                        </a>
-                    </figcaption>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+        <figure>
+            <div class="wrapperAroundCourses ">
+                <div>
+                    <a [routerLink]="['/courseDetails','BigData&Hadoop']"><img src="../../../../wwwroot\Pictures\BigData&Hadoop.png" alt="" class="figureSize"></a>
                 </div>
-            </figure>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <figure>
-                <div class="wrapperAroundCourses ">
-                    <div>
-                        <a (click)='navigateintopage("DevOps")' ><img src="../../../../wwwroot\Pictures\DevOps.png" alt="" class="figureSize"></a>
-                    </div>
-                    <figcaption class="item-description Content">
-                        <a (click)='navigateintopage("DevOps")' >
-                            <h4 class="item-title fontweightofhome">DevOps</h4>
-                            <p class="fontweightofhome">Training</p>
-                        </a>
-                    </figcaption>
-                </div>
-            </figure>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <figure>
-                <div class="wrapperAroundCourses ">
-                    <div>
-                        <a (click)='navigateintopage("Tableau Advanced")' ><img src="../../../../wwwroot\Pictures\TabelauAdvanced.png" alt="" class="figureSize"></a>
-                       
-                    </div>
-                    <figcaption class="item-description Content">
-                        <a (click)='navigateintopage("Tableau Advanced")' >
-                            <h4 class="item-title fontweightofhome">Tableau Advanced</h4>
-                            <p class="fontweightofhome">Training</p>
-                        </a>
-                    </figcaption>
-                </div>
-            </figure>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <figure>
-                <div class="wrapperAroundCourses ">
-                    <div>
-                        <a (click)='navigateintopage("ServiceNow")' ><img src="../../../../wwwroot\Pictures\ServiceNow.png" alt="" class="figureSize"></a>
-                    </div>
-                    <figcaption class="item-description Content">
-                        <a (click)='navigateintopage("ServiceNow")' >
-                            <h4 class="item-title fontweightofhome">ServiceNow</h4>
-                            <p class="fontweightofhome">Training</p>
-                        </a>
-                    </figcaption>
-                </div>
-            </figure>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <figure>
-                <div class="wrapperAroundCourses  ">
-                    <div class="img">
-                        <a (click)='navigateintopage("Hyperion HFM")' ><img src="../../../../wwwroot\Pictures\HyperionHFM.png" alt="" class="figureSize"></a>
-                    </div>
-                    <figcaption class="item-description Content">
-                        <a (click)='navigateintopage("Hyperion HFM")' >
-                            <h4 class="item-title fontweightofhome">Hyperion HFM</h4>
-                            <p class="fontweightofhome">Training</p>
-                        </a>
-                    </figcaption>
-                </div>
-            </figure>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <figure>
-                <div class="wrapperAroundCourses ">
-                    <div>
-                        <a (click)='navigateintopage("Dell Boomi")' ><img src="../../../../wwwroot\Pictures\DellBoomi.jpg" alt="" class="figureSize"></a>
-                    </div>
-                    <figcaption class="item-description Content">
-                        <a (click)='navigateintopage("Dell Boomi")' >
-                            <h4 class="item-title fontweightofhome">Dell Boomi</h4>
-                            <p class="fontweightofhome">Training</p>
-                        </a>
-                    </figcaption>
-                </div>
-            </figure>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
-            <figure>
-                <div class="wrapperAroundCourses ">
-                    <div>
-                        <a (click)='navigateintopage("WorkDay")' ><img src="../../../../wwwroot\Pictures\WorkDay.png" alt="" class="figureSize"></a>
-                    </div>
-                    <figcaption class="item-description Content">
-                        <a (click)='navigateintopage("WorkDay")' >
-                            <h4 class="item-title fontweightofhome">WORKDAY</h4>
-                            <p class="fontweightofhome">Training</p>
-                        </a>
-                    </figcaption>
-                </div>
-            </figure>
-        </div>
+                <figcaption class="item-description Content">
+                    <a (click)='navigateintopage("BigData&Hadoop")'>
+                        <h4 class="item-title fontweightofhome">Big Data &amp; Hadoop</h4>
+                        <p class="fontweightofhome">Training</p>
+                    </a>
+                </figcaption>
+            </div>
+        </figure>
 
     </div>
-    <router-outlet></router-outlet>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+        <figure>
+            <div class="wrapperAroundCourses ">
+                <div>
+                    <a [routerLink]="['/courseDetails','RoboticProcessAutomation'] "><img src="../../../../wwwroot\Pictures\RoboticProcessAutomation.png" alt="" class="figureSize"></a>
+                </div>
+                <figcaption class="item-description Content">
+                    <a (click)='navigateintopage("RoboticProcessAutomation")'>
+                        <h4 class="item-title fontweightofhome">RPA COURSES</h4>
+                        <p class="fontweightofhome">Training</p>
+                    </a>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+        <figure>
+            <div class="wrapperAroundCourses ">
+                <div>
+                    <a (click)='navigateintopage("DevOps")'><img src="../../../../wwwroot\Pictures\DevOps.png" alt="" class="figureSize"></a>
+                </div>
+                <figcaption class="item-description Content">
+                    <a (click)='navigateintopage("DevOps")'>
+                        <h4 class="item-title fontweightofhome">DevOps</h4>
+                        <p class="fontweightofhome">Training</p>
+                    </a>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+        <figure>
+            <div class="wrapperAroundCourses ">
+                <div>
+                    <a (click)='navigateintopage("Tableau Advanced")'><img src="../../../../wwwroot\Pictures\TabelauAdvanced.png" alt="" class="figureSize"></a>
+
+                </div>
+                <figcaption class="item-description Content">
+                    <a (click)='navigateintopage("Tableau Advanced")'>
+                        <h4 class="item-title fontweightofhome">Tableau Advanced</h4>
+                        <p class="fontweightofhome">Training</p>
+                    </a>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+        <figure>
+            <div class="wrapperAroundCourses ">
+                <div>
+                    <a (click)='navigateintopage("ServiceNow")'><img src="../../../../wwwroot\Pictures\ServiceNow.png" alt="" class="figureSize"></a>
+                </div>
+                <figcaption class="item-description Content">
+                    <a (click)='navigateintopage("ServiceNow")'>
+                        <h4 class="item-title fontweightofhome">ServiceNow</h4>
+                        <p class="fontweightofhome">Training</p>
+                    </a>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+        <figure>
+            <div class="wrapperAroundCourses  ">
+                <div class="img">
+                    <a (click)='navigateintopage("Hyperion HFM")'><img src="../../../../wwwroot\Pictures\HyperionHFM.png" alt="" class="figureSize"></a>
+                </div>
+                <figcaption class="item-description Content">
+                    <a (click)='navigateintopage("Hyperion HFM")'>
+                        <h4 class="item-title fontweightofhome">Hyperion HFM</h4>
+                        <p class="fontweightofhome">Training</p>
+                    </a>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+        <figure>
+            <div class="wrapperAroundCourses ">
+                <div>
+                    <a (click)='navigateintopage("Dell Boomi")'><img src="../../../../wwwroot\Pictures\DellBoomi.jpg" alt="" class="figureSize"></a>
+                </div>
+                <figcaption class="item-description Content">
+                    <a (click)='navigateintopage("Dell Boomi")'>
+                        <h4 class="item-title fontweightofhome">Dell Boomi</h4>
+                        <p class="fontweightofhome">Training</p>
+                    </a>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+        <figure>
+            <div class="wrapperAroundCourses ">
+                <div>
+                    <a (click)='navigateintopage("WorkDay")'><img src="../../../../wwwroot\Pictures\WorkDay.png" alt="" class="figureSize"></a>
+                </div>
+                <figcaption class="item-description Content">
+                    <a (click)='navigateintopage("WorkDay")'>
+                        <h4 class="item-title fontweightofhome">WORKDAY</h4>
+                        <p class="fontweightofhome">Training</p>
+                    </a>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+
+</div>
+<router-outlet></router-outlet>
 <!--</div>-->
+<!--(click)='navigateintopage("BigData&Hadoop")'-->

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MailKit.Net.Smtp;
+//using Manager;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
@@ -36,6 +37,7 @@ namespace NivasIt.Controllers
           {
             //if (!ModelState.IsValid)
             //    return BadRequest("Please enter the all valid details");
+           // EmailManager emailManager = new EmailManager();
             var message = new MimeMessage();
             message.From.Add(new MailboxAddress("sai charan", "namadasaicharan@gmail.com"));
             message.To.Add(new MailboxAddress(emailNotificationDetails.Name, emailNotificationDetails.Email));

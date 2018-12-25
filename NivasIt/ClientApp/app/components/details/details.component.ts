@@ -7,9 +7,10 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/concatMap';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/observable/from';
-import { DetailsServices } from '../DetailsServices/details.services';
+//import { DetailsServices } from '../DetailsServices/details.services';
 import { DomSanitizer } from '@angular/platform-browser'
 import { EmailServices } from '../DetailsServices/email.services';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 
 @Component({
@@ -22,20 +23,26 @@ export class DetailsComponent implements OnInit {
 
 
 
-    private details: IDetailsConversion;
+    private details: IDetailsConversion ;
     private keyword :string[]; 
-    public courseNmme: string;
+    public courseNmme: string | null;
     public imageUrl: string;
     public faq: string[];
     public courseContent: string[];
 
-    constructor(private detailsService: DetailsServices, private http: Http, private domSanitizer: DomSanitizer, private emailservice: EmailServices) {
-
+    constructor(private activatedRoute: ActivatedRoute,private http: Http, private domSanitizer: DomSanitizer, private emailservice: EmailServices) {
+        debugger;
     }
     
     ngOnInit() {
 
         //  this.Details=this.details.getDetails();
+       // this.courseNmme = this.activatedRoute.snapshot.params['CourseName'];
+        debugger;
+        this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
+            let CourseId = params.get('CourseName');
+            this.courseNmme = CourseId;
+        });
         debugger;
       this.Details().subscribe(data =>
             this.details = data,
@@ -51,7 +58,7 @@ export class DetailsComponent implements OnInit {
     }
 
     public Details(): Observable<IDetailsConversion> {//
-		this.courseNmme = this.detailsService.getValue;
+		//this.courseNmme = this.detailsService.getValue;
        // return this.http.get(this._url).map((resp:Response) =>resp.json());
         return this.http.get(this._url).map(response => {
             debugger;
@@ -74,7 +81,7 @@ export class DetailsComponent implements OnInit {
     public onclickss() {
         //on clcik the this details from the json file i.e, should be displayed
         debugger;
-        this.courseNmme = this.detailsService.getValue;
+       // this.courseNmme = this.detailsService.getValue;
        
         this.keyword = this.details.KeyFeatures;
 

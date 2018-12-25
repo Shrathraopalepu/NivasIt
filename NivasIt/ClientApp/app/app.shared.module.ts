@@ -44,9 +44,9 @@ import { StudentRegister } from './components/DetailsServices/studentregister.se
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
             {
-                path: 'courses', component: CoursesComponent
+                path: 'courses', component: CoursesComponent, pathMatch: 'full'
             },
-            { path: 'courses/details', component: DetailsComponent},
+            { path: 'courseDetails/:CourseName', component: DetailsComponent},
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'AboutUs', component: AboutUsComponent },
             { path: 'StudentRegister', component: StudentRegisterComponent },
