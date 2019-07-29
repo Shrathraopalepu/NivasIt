@@ -23,6 +23,7 @@ namespace NivasIt
         public void ConfigureServices(IServiceCollection services)
         {
             //for test purpose
+            //for second commit
             services.AddMvc();
         }
 
